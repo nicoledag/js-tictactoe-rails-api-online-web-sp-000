@@ -17,5 +17,7 @@ function updateState(square) {
 
 
 function setMessage(str) {
-  message.innerHTML = str
+  // message.innerHTML = str
+
+  $("#message").html("string");
 }
