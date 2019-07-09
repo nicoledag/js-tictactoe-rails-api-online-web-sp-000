@@ -10,6 +10,12 @@ function player() {
   }
 }
 
-function updateState(x, y) {
-  $(`[data-x=${x}][data-y=${y}]`).html(player());
+function updateState(square) {
+  var currentPlayer = player();
+  $(square).text(currentPlayer);
+}
+
+
+function setMessage(str) {
+  message.innerHTML = str
 }
